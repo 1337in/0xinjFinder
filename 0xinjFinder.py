@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# 0xInj v1.0
+# 0xInjFinder v1.0
 # Coded By: Abdullah AlZahrni
 import urllib, requests
 import lxml.html
 
 print '''\033[1;36m
                         █▀▀█ █░█ ░▀░ █▀▀▄ ░░▀ 💉
-                        █▄▀█ ▄▀▄ ▀█▀ █░░█ ░░█ 💉
+                        █▄▀█ ▄▀▄ ▀█▀ █░░█ ░░█ [Finder]
                         █▄▄█ ▀░▀ ▀▀▀ ▀░░▀ █▄█ 💉
                         0xInj v1.0 💉
                         Coded By: Abdullah AlZahrni
