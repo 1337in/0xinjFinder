@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # 0xInj v2.0
-# Coded By: Abdullah AlZahrni
+# Coded By: Abdullah AlZahrani
 
 from google import search
 import urllib, requests
@@ -27,7 +27,7 @@ print ''' \033[1;36m
         ┃╰━╯┣╯╭╮╰┫┃┃╱┃┃┃┃┃╱╱┃┃┃┃┃╰╯┃┃━┫┃
         ╰━━━┻━╯╰━┻┻╯╱╰━┫┣╯╱╱╰┻╯╰┻━━┻━━┻╯
         ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╯┃ 0xiNjFinder v2.0
-        ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━╯ Coded By: Abdullah AlZahrni
+        ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━╯ Coded By: Abdullah AlZahrani
         Twitter: @0xAbdullah | WebSite: WWW.0XA.TECH
 \033[1;m\n'''
 proxy()
