@@ -12,6 +12,6 @@ The purpose of this program is to increase security within the server. This prog
  - Find SQL Injection On Server
  - Find SQL Injection On Google [New]
 # Coded By
-Abdullah AlZahrni
+Abdullah AlZahrani
 
 Twitter : 0xAbdullah
