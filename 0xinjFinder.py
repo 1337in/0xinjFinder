@@ -24,7 +24,7 @@ print ''' \033[1;36m
         ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━╯ Coded By: Abdullah AlZahrani
         Twitter: @0xAbdullah | WebSite: WWW.0XA.TECH
 \033[1;m\n'''
-proxy()
+
 List = '''
  |1| > Find SQL Injection On Server
  |2| > Find SQL Injection On Google [By Droks]
