@@ -1,24 +1,18 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# 0xInj v2.0
+# 0xInj v2.1
 # Coded By: Abdullah AlZahrani
 
-from google import search
+try:
+    from googlesearch.googlesearch import GoogleSearch
+except:
+    print "[!] You need to install (GoogleSearch)\n[#] You can install it via 'pip install google-search'"
 import urllib, requests
 import lxml.html
 import socket
 import os
 
-def proxy():
-    UseProxy = raw_input("[~] Do you want to use a proxy Y/n: ")
-    if UseProxy == 'Y' or UseProxy == 'y':
-        proxy = raw_input("[!] Enter Proxy | ex: http://IP:Port \n > ")
-        os.environ['http_proxy'] = proxy
-        os.environ['HTTP_PROXY'] = proxy
-        os.environ['https_proxy'] = proxy
-        os.environ['HTTPS_PROXY'] = proxy
-    else:
-        pass
+
 print ''' \033[1;36m
         ╭━━━┳━╮╭━╮╭━╮╱╭╮╭━━━╮╱╱╱╱╱╭╮
         ┃╭━╮┣╮╰╯╭╯┃┃╰╮┃┣┫╭━━╯╱╱╱╱╱┃┃
@@ -26,7 +20,7 @@ print ''' \033[1;36m
         ┃┃┃┃┃╭╯╰╮┣┫┃╰╮┃┣┫╭━━╋┫╭╮┫╭╮┃┃━┫╭╯
         ┃╰━╯┣╯╭╮╰┫┃┃╱┃┃┃┃┃╱╱┃┃┃┃┃╰╯┃┃━┫┃
         ╰━━━┻━╯╰━┻┻╯╱╰━┫┣╯╱╱╰┻╯╰┻━━┻━━┻╯
-        ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╯┃ 0xiNjFinder v2.0
+        ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭╯┃ 0xiNjFinder v2.1
         ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━╯ Coded By: Abdullah AlZahrani
         Twitter: @0xAbdullah | WebSite: WWW.0XA.TECH
 \033[1;m\n'''
@@ -66,8 +60,11 @@ def Server():
 def Google():
     dork = raw_input(' > Enter Dork | ex: inurl:".php?id=":\n > ')
     Results = input(" > How many results do you want?\n > ")
-    for url in search(dork, tld='com', lang='en', stop=Results):
+    response = GoogleSearch().search(dork, Results)
+    for result in response.results:
+        url = result.url
         Checker(url)
+
     print ("\n[#] Done !")
 
 def Checker(url):
