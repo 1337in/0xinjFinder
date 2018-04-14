@@ -7,10 +7,14 @@ try:
     from googlesearch.googlesearch import GoogleSearch
 except:
     print "[!] You need to install (GoogleSearch)\n[#] You Can install it by typing: pip install google-search"
-import urllib, requests
+import urllib
+try:
+    import requests
+except:
+    print "[!] You need to install (requests)\n[#] You Can install it by typing: pip install requests"
 import lxml.html
 import socket
-import os
+
 
 
 print ''' \033[1;36m
